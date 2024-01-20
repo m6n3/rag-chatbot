@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 # Set PALM2 API key or you will be asked in the webapp to enter it.
 # You can get one from https://makersuite.google.com/app/apikey
-GOOGLE_API_KEY="PALM_API_KEY"
+export GOOGLE_API_KEY="PALM_API_KEY"
 
 
 streamlit run app.py  # runs the webapp at http://localhost:8051
