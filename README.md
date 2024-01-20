@@ -1,14 +1,11 @@
-# rag-chatbot
-RAG-chatbot: A RAG chatbot for Google cloud healthcare
-
-
+# RAG-chatbot
 A fully functional chatbot that leverages Google Cloud Healthcare public documentation to answer questions. It utilizes the Google PALM2 API for language model capabilities, Chroma for vector database operations, and Streamlit for the web application interface.
 
 ![RAG-chatbot](./artifacts/rag-chatbot.svg)
 
 
 ## Demo
-
+![Demo](./artifacts/demo.gif)
 
 
 ## Usage
@@ -28,8 +25,7 @@ pip install -r requirements.txt
 # You can get one from https://makersuite.google.com/app/apikey
 export GOOGLE_API_KEY="PALM_API_KEY"
 
-
-streamlit run app.py  # runs the webapp at http://localhost:8051
+streamlit run app.py  # Launches the webapp at http://localhost:8051
 ```
 
 

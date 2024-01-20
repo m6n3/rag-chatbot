@@ -14,17 +14,17 @@ api_key_valid = False
 
 with st.sidebar:
     st.title("🤖 Cloud Healthcare API Chatbot")
-    if os.environ.get("GOOGLE_API_KEY") is None:
+    if not os.environ.get("GOOGLE_API_KEY"):
         api_key = st.text_input("Enter PALM API token:", type="password")
-        os.environ["GOOGLE_API_KEY"] = api_key
     else:
         api_key = os.environ.get("GOOGLE_API_KEY")
 
     # Hack for validating api_key.
-    if len(api_key) > 10:
+    if api_key and len(api_key) > 10:
         api_key_valid = True
+        os.environ["GOOGLE_API_KEY"] = api_key
         st.success("Proceed to entering your prompt message!", icon="👉")
-    else:
+    elif api_key:
         st.error("API key is invalid", icon="🚨")
 
 
