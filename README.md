@@ -5,7 +5,6 @@ RAG-chatbot: A RAG chatbot for Google cloud healthcare
 A fully functional chatbot that leverages Google Cloud Healthcare public documentation to answer questions. It utilizes the Google PALM2 API for language model capabilities, Chroma for vector database operations, and Streamlit for the web application interface.
 
 ![RAG-chatbot](./artifacts/rag-chatbot.svg)
-<img src="./rag-chatbot.svg">
 
 
 ## Demo
