@@ -33,5 +33,5 @@ streamlit run app.py  # runs the webapp at http://localhost:8051
 ```
 
 
-**Note:** When you run the app for the first time, it downloads Google Cloud public pages and builds an index, which can take a considerable amount of time. You can expedite the process by reducing the number of pages to download. Simply modify the value of the `MAX_PAGES` variable in the `chat_llm.py` file.
+**Note:** When you run the app for the first time, it downloads Google Cloud public pages and builds an index, which can take a considerable amount of time. You can expedite the process by reducing the number of pages to download. Simply modify the value of the `MAX_PAGES` variable in the `chatbot_llm.py` file.
 
