@@ -3,7 +3,7 @@
 import string
 
 
-GCP_PROMPT = rule_summarizaion_template = string.Template(
+GCP_PROMPT = string.Template(
     """
 Your task is to explain existing consents in the consent store.
 

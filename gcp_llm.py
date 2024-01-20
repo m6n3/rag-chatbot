@@ -8,7 +8,7 @@ import prompts
 
 class GCPLLM:
     def __init__(self):
-        self.rule_summarizaion_template = prompts.GCP_PROMPT
+        self.template = prompts.GCP_PROMPT
         self.prompt = langchain.PromptTemplate(
             input_variables=["input"],
             template="""{input}""",
@@ -19,7 +19,5 @@ class GCPLLM:
         )
 
     def run(self, rules_textproto):
-        rule_query = self.rule_summarizaion_template.safe_substitute(
-            rules=rules_textproto
-        )
+        rule_query = self.template.safe_substitute(rules=rules_textproto)
         return self.chain.predict(input=rule_query)
